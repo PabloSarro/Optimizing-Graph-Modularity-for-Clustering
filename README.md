@@ -25,7 +25,7 @@ Finally, a series of graph examples are also included along with examples of out
 
 # Resolution: 
 
-The LOUVAIN METHOD is used, a very efficient method for finding good partitions in large network communities. It consists of two phases, which are implemented in the GrafPajek.java file.
+The Louvain Method is used, a very efficient method for finding good partitions in large network communities. It consists of two phases, which are implemented in the GrafPajek.java file.
 
 ## Phase 1 (Local Community Variation):
 
