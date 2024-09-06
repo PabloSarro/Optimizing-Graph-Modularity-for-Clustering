@@ -8,7 +8,7 @@ More information on what is the structure of communities can be found on the Wik
 
 This program aims to implement a method that, given a network to be loaded from a file, returns the best possible subdivision into communities. To do this, the following considerations are taken into account:
 
-* The implementation will be programmed for graphs with format: Pajek NET (https://gephi.org/users/supported-graph-formats/pajek-net-format/).
+* The implementation will be programmed for graphs with format: Pajek NET (https://gephi.org/users/supported-graph-formats/pajek-net-format/). .net files corresponding to the graph that wants to be studied must be placed outside any folder.
 
 * The problem will only be considered for NON-directed and NON-labelled graphs.
   
