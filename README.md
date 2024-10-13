@@ -1,5 +1,5 @@
-[!TIP]
-[Yeah]
+> [!TIP]
+> Yeah
 
 # Implementation of an algorithm for community detection: Optimizing Graph Modularity for Suboptimal Clustering
 
