@@ -1,3 +1,6 @@
+[!TIP]
+[Yeah]
+
 # Implementation of an algorithm for community detection: Optimizing Graph Modularity for Suboptimal Clustering
 
 We want to implement an algorithm that allows **identifying the communities in a graph**. The communities are groups of nodes in the graph that are densely connected to each other, while they are poorly connected to nodes in other groups/communities. 
