@@ -11,9 +11,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Random;
 
-// --------------------------------------------------------------------------------------------------------------------------------
-// ------------------------------------- L'EXPLICACIÓ DEL PROGRAMA ES TROBA A L'ARXIU README --------------------------------------
-// --------------------------------------------------------------------------------------------------------------------------------
 
 public class GrafPajek {
 
@@ -202,7 +199,7 @@ public class GrafPajek {
         return llista_comunitats_no_buides;
     }
 
-    // ---------------------------------------- FASE 1 DEL MÈTODE DE LOUVAIN: ----------------------------------------
+    // ----------------------------------------------- PHASE 1 IN LOUVAIN'S METHOD: -----------------------------------------------
     public void ModificarModularitat(int num_iter, int max_iter, GrafPajek grafPajek) {
         // S'inicialitza a 0 la variable que comptarà les iteracions de la primera fase en què la modularitat no millora (d'aquesta manera), quan iteracions_sense_canvi > max_iter, s'aturarà la primera fase.
         int iteracions_sense_canvi = 0;
@@ -299,14 +296,14 @@ public class GrafPajek {
                     iteracions_sense_canvi += 1;
                     // Quan aquest superi el nombre d'iteracions màxim, se surt del mètode.
                     if (iteracions_sense_canvi > max_iter) {
-                        System.out.println("Fase 1 finalitzada (motiu: no s'ha aconseguit millorar la modularitat després de "+max_iter+" iteracions).");
+                        System.out.println("\nPhase completed: modularity hasn't improved after "+max_iter+" iterations.");
                         return;
                     }
                 }
             }
-            System.out.println("Fase 1 finalitzada (motiu: s'ha arribat a les "+num_iter+" iteracions).");
+            System.out.println("\nPhase completed: the maximum number of iterations ("+num_iter+") has been achieved.");
         } catch (ElementNoTrobat e) {
-            System.out.println("Excepció ElementNoTrobat en el mètode ModificarModularitat.");
+            System.out.println("Exception ElementNoTrobat in the method ModificarModularitat.");
         }
     }
 
@@ -401,14 +398,14 @@ public class GrafPajek {
                         iteracions_sense_canvi += 1;
                         // Quan aquest superi el nombre d'iteracions màxim, se surt del mètode.
                         if (iteracions_sense_canvi > max_iter) {
-                            System.out.println("Fase 2 finalitzada (motiu: no s'ha aconseguit millorar la modularitat després de "+max_iter+" iteracions).");
+                            System.out.println("\nPhase completed: modularity hasn't improved after "+max_iter+" iterations).");
                             return;
                         }
                     }
                 }
             }
         } catch (ElementNoTrobat e) {
-            System.out.println("Excepció ElementNoTrobat en el mètode FusionarComunitats.");
+            System.out.println("Exception ElementNoTrobat in the method FusionarComunitats.");
         }
     }
 
@@ -426,11 +423,11 @@ public class GrafPajek {
                 writer.write(comunitat+"\n");
             }
             writer.close();
-            System.out.println("L'arxiu "+filename+" s'ha generat correctament: ");
+            System.out.println("\nThe file "+filename+" has been generated correctly.");
         } catch (IOException e) {
-            System.out.println("Hi ha hagut un error durant l'escriptura de les dades. Torneu-ho a provar, si us plau\"" + e.getMessage());
+            System.out.println("There has been an error while the data was being written in the new file. Please, try again" + e.getMessage());
         } catch (ElementNoTrobat e) {
-            System.out.println("Excepció ElementNoTrobat en el mètode RetornarArxiu.");
+            System.out.println("Exception ElementNoTrobat in the method RetornarArxiu.");
         }
     }
 
