@@ -1,6 +1,3 @@
-> [!TIP]
-> Yeah
-
 # Implementation of an algorithm for community detection: Optimizing Graph Modularity for Suboptimal Clustering
 
 We want to implement an algorithm that allows **identifying the communities in a graph**. The communities are groups of nodes in the graph that are densely connected to each other, while they are poorly connected to nodes in other groups/communities. 
@@ -9,9 +6,9 @@ We want to implement an algorithm that allows **identifying the communities in a
 
 More information on what is the structure of communities can be found on the Wikipedia page: https://en.wikipedia.org/wiki/Community_structure
 
-This program aims to implement a method that, given a network to be loaded from a file, returns the best possible subdivision into communities. To do this, the following considerations are taken into account:
+This program implements an algorithm that returns the best possible subdivision into communities, given a network loaded from a file. To do this, the following considerations are taken into account:
 
-* The implementation will be programmed for graphs with format: Pajek NET (https://gephi.org/users/supported-graph-formats/pajek-net-format/). .net files corresponding to the graph that wants to be studied must be placed outside any folder.
+* The implementation will be programmed for graphs with the format: Pajek NET (https://gephi.org/users/supported-graph-formats/pajek-net-format/). .net files corresponding to the graph that wants to be studied must be placed outside any folder.
 
 * The problem will only be considered for NON-directed and NON-labelled graphs.
   
@@ -25,6 +22,8 @@ This program aims to implement a method that, given a network to be loaded from 
 
 Finally, a series of graph examples are also included along with examples of output .clu files, resulting from the execution of the main program.
 
+> [!NOTE]
+> To change the graph, one must go to the Main.java file, change the filePath variable and include the graph file (in .net format) in the main directory.
 
 # Resolution: 
 
