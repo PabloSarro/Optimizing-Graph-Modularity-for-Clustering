@@ -23,7 +23,7 @@ This program implements an algorithm that returns the best possible subdivision 
 Finally, a series of graph examples are also included along with examples of output .clu files, resulting from the execution of the main program.
 
 > [!NOTE]
-> To obtain a suboptimal community partition of a certain graph, go to the Main.java file, include the graph file (in .net format) in the main directory and change the filePath variable to the name of the graph .clu file.
+> To obtain a suboptimal community partition for a certain graph, go to the Main.java file, include the graph file (in .net format) in the main directory and change the filePath variable to the name of the graph file.
 
 # Resolution: 
 
