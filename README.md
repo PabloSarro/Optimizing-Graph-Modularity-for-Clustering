@@ -1,4 +1,4 @@
-# Implementation of an algorithm for community detection: Optimizing Graph Modularity for Suboptimal Clustering
+# Implementation of an algorithm for community detection: Optimizing Graph Modularity for Clustering
 
 We want to implement an algorithm that allows **identifying the communities in a graph**. The communities are groups of nodes in the graph that are densely connected to each other, while they are poorly connected to nodes in other groups/communities. 
 
@@ -16,7 +16,7 @@ This program implements an algorithm that returns the best possible subdivision 
 
 * To measure the quality of a subdivision into communities, a metric known as Modularity (https://en.wikipedia.org/wiki/Modularity_(networks)) is used. This metric measures the density of links between the nodes of the community and the nodes of other communities. The higher the value of modularity, the better the subdivision into communities.
 
-* This is an NP-hard optimisation problem, so it will not be possible to explore all possible options, and in most cases, a sub-optimal result will be obtained.
+* This is an NP-hard optimisation problem, so it will not be possible to explore all possible options, and in most cases, a suboptimal result will be obtained.
 
 * At the end of the execution, the maximum value of modularity obtained will be returned, and the classification of nodes in groups in some output file (in the Pajek format, the output file is of type .clu: for instance, if the input is the network zachary.net, an output file called zachary_0.41880.clu will be returned, in which the partition in communities of the vertices is stored).
 
